@@ -1,0 +1,79 @@
+
+body { 
+    font-size: 19px;
+/*so table can have margin top, background does not go down*/
+}
+table{
+    
+    width: 100%;
+    border-collapse: collapse;
+    background:white;
+    opacity: 0.88;
+    border-radius: 10px;
+    background-color: white;
+
+
+}
+tr {
+
+    border-bottom-left-radius: 10px;
+
+}
+th{
+
+  background-color: #4CAF50;
+  color: white;
+
+}
+tr:nth-child(even) {background-color: #4CAF50;color: white;}
+th, td{
+    border: none;
+    height: 30px;
+    padding: 2px;
+}
+
+.edit_btn {
+    text-decoration: none;
+    padding: 2px 5px;
+    background: #2E8B57;
+    color: white;
+    border-radius: 3px;
+}
+
+.del_btn {
+    text-decoration: none;
+    padding: 2px 5px;
+    color: white;
+    border-radius: 3px;
+    background: #800000;
+}  
+.container2{
+  width: 100%;  
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center absolute;
+  justify-content: center;
+    display: flex;  
+    
+}
+#div{
+    max-height: 400px;
+    overflow-y: auto;
+    width: 50%;
+    align-items: center;
+    border-radius: 10px;
+    margin: 0;
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+     -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+}
+#forma{
+    margin-top: 114px;
+    display: none;
+    position: absolute;
+    width: 30%;
+    right: 50px;
+}

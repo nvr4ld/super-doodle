@@ -1,0 +1,148 @@
+.container{
+  width: 100%;  
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center absolute;
+}
+.loginform{/*made it in the center--------------*/
+	width: 30%;
+	height: 80%;
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	margin: auto;/*-------------------*/
+}
+.text{
+	margin-top: 120px;
+	padding-bottom: 30px;
+	text-align: center;
+	font-size: 30px;	
+	color: white;
+}
+.form{
+	border: 1px inset purple;
+	border-radius: 10px;
+	background-color: white;
+}
+.wrap-input100 {
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #e6e6e6;/* almost hidden, grey*/
+  padding: 30px 0;
+}
+.buttonstyle{
+	height: 70px;
+	display: flex;/* centered */
+
+  align-items: center;
+}
+.button{
+	height: 42px; 	
+	font-size: 20px;
+	font-family: Ubuntu;
+	border-radius: 40px;
+	background: rgb(176,57,161);/* cssgradient.io */
+background: linear-gradient(90deg, rgba(176,57,161,1) 0%, rgba(243,59,146,1) 35%);
+color: white;
+width: 160px;
+cursor: pointer;
+}
+.button2{
+  height: 42px;   
+  font-size: 20px;
+  font-family: Ubuntu;
+  border-radius: 40px;
+background: rgb(5,99,175);
+background: linear-gradient(90deg, rgba(5,99,175,1) 0%, rgba(6,116,205,1) 35%);
+color: white;
+width: 160px;
+cursor: pointer;
+}
+
+.input100 {
+  font-family: Ubuntu;
+  border: none;
+  font-size: 20px;
+  color:#d41872;
+  line-height: 1.2;
+  display: block;
+  width: 75%;
+  height: 50px;
+  padding: 0 10px 0 80px; /* top, bottom-0, right-10, left-80 */
+  -webkit-transition: all 0.4s;/*animation*/
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+
+}
+.focus-input100 {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+.focus-input100::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 1px;
+
+  -webkit-transition: all 0.4s;/*controls speed of gradient*/
+  -o-transition: all 0.4s;/*controls speed of gradient*/
+  -moz-transition: all 0.4s;/*controls speed of gradient*/
+  transition: all 0.4s;/*controls speed of gradient*/
+
+  background: #d41872;
+  background: -webkit-linear-gradient(left, #a445b2, #d41872, #fa4299);/*adds gradient line in the bottom*/
+  background: -o-linear-gradient(left, #a445b2, #d41872, #fa4299);/*adds gradient line in the bottom*/
+  background: -moz-linear-gradient(left, #a445b2, #d41872, #fa4299);/*adds gradient line in the bottom*/
+  background: linear-gradient(left, #a445b2, #d41872, #fa4299);/*adds gradient line in the bottom*/
+}
+
+.focus-input100::after {
+  font-family: Linearicons-Free;/*images on the left side*/
+  font-size: 18px;
+  color: #666666;
+
+  content: attr(data-placeholder);/*gives them content of data placeholder, which is in the form written*/
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 45px;
+  left: 35px;
+ 
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.input100:focus {
+  padding-left: 60px;/*changed from 80 to 60, so moves left*/
+}
+
+.input100:focus + .focus-input100::after {
+  left: 23px;/*was 30, focus input 100 also moves left*/
+  color: #d41872;
+}
+
+.input100:focus + .focus-input100::before {
+  width: 100%;
+}
+.input100:focus{
+	outline: none;
+}
+.button:hover{
+	background: none;
+	background-color: grey;
+}

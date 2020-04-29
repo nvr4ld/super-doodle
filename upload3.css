@@ -1,0 +1,17 @@
+body { 
+    font-size: 25px;
+}
+form {
+    width: 20%;
+    margin-top: 0;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #bbbbbb; 
+    border-radius: 5px;
+    top: 50%;
+     -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+       position: absolute;
+    display: inline-block;
+
+}

@@ -1,0 +1,53 @@
+/* BE SURE TO INCLUDE THE CSS RESET FOUND IN THE DEMO PAGE'S CSS */
+
+/*------------------------------------*\
+    NAV
+\*------------------------------------*/
+.nav {
+    font-size: 28px;
+    padding-left: 10px;
+   margin-top: 0;
+    list-style: none;
+    font-weight: italic;
+    margin-bottom: 10px;
+    float: left; /* Clear floats */
+    width: 100%;
+}
+.nav li {
+    float: left;
+    margin-right: 30px;
+    position: relative;
+}
+.nav a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+.nav a:hover {
+    text-decoration: none;
+}
+
+/*--- DROPDOWN ---*/
+.nav ul {
+    list-style: none;
+    position: absolute;
+    left:-9999px; 
+    padding: 0;
+    }
+.nav ul li {
+    padding-top: 1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+    float: none;
+
+}
+.nav ul a {
+    white-space: nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+.nav li:hover ul { /* Display the dropdown on hover */
+    left: 0; /* Bring back on-screen when needed */
+}
+.nav li:hover::after, .nav li:hover::before{width:100%;left:0;}
+.nav li::after, .nav li::before{content:'';position:absolute;top:calc(100% + 5px);width:0;right:0;height:3px;}
+.nav li::before{-webkit-transition:width .25s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;-o-transition:width .25s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;transition:width .25s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;background:#845EC2;}
+.nav li::after{-webkit-transition:width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);-o-transition:width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);transition:width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);background:#2FFFAD;}
+#active:after{background:#2FFFAD;width:100%;left:0;}
+#active:before{z-index:2;}}
